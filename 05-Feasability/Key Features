@@ -20,12 +20,31 @@ Crowd Verification — volunteers/ward officers confirm shelter status (open/ful
 
 Priority Recommendation Engine — recommends the best shelter (not just nearest) factoring in capacity, distance, family needs, and route safety.
 
-** HOW IT WORKS? **
+# Impact on Citizens:
 
-Official flood/storm alert is issued.
-User opens Aasra or receives an SMS alert.
-App fetches the user's current location.
-It queries nearby shelters and food points from the live database.
-Full or inaccessible shelters are filtered out.
-The app displays the best route to the nearest available shelter.
-If there's no internet, the user receives an SMS with the top nearby shelters, their occupancy status, and a helpline number.
+Faster Evacuation -- Direct guidance to shelters with confirmed space and food.
+Life Safety --  Real-time routing around flood hazards.
+Inclusive Protection -- Family Mode for elderly, children, women, and disabled people.
+No-Network Resilience --  SMS fallback for disconnected users.
+
+# Feasability Analysis & Risk Mitigation:
+
+** Political Aspect :
+Directly aligns with India's National Disaster Management Policy and NDMA's push for
+geotargeted alerting (SACHET, Cell Broadcast)—ensuring strong government backing and
+inter-agency support (NDRF, SDRF, ward offices).
+
+** Technical aspect : 
+Core technologies (Firebase, Google Maps, Android native stack) are mature and 
+battle-tested. The success of platforms like Google's SOS Alerts 
+and Kerala's Rebuild Kerala flood-response systems proves the model works at scale.
+
+** Socil /user Aspect : 
+Leverages India's massive smartphone base (~954M users) and near-universal SMS reach. 
+The SMS fallback ensures the app works even for 
+users without smartphones or data, maximizing real-world adoption during actual disasters.
+
+
+
+
+
