@@ -1,0 +1,31 @@
+Core Idea
+
+"A flood relief navigation and shelter occupancy platform that helps affected people find 
+the nearest available shelter, food point, and safe route in real time, even during low-network conditions."
+
+** Key Features (Novelty / Wow Factor) **
+Shelter Occupancy Meter — green/orange/red status based on remaining capacity, updated live.
+
+Food & Essentials Layer — shows nearby community kitchens, relief camps, medical aid, and water points.
+
+Safe-Route Navigation — routes around waterlogged roads, blocked streets, fallen trees, and electrical-risk zones.
+
+Family Mode — tailors shelter suggestions based on group composition (elderly, children, women, disabled members).
+
+SMS Fallback — sends/receives shelter info via SMS when data connectivity fails, aligned with India's geo-targeted disaster messaging approach.
+
+Admin Live Update Panel — shelter managers update bed count, food stock, and status in real time.
+
+Crowd Verification — volunteers/ward officers confirm shelter status (open/full/out of supplies) for accuracy.
+
+Priority Recommendation Engine — recommends the best shelter (not just nearest) factoring in capacity, distance, family needs, and route safety.
+
+** HOW IT WORKS? **
+
+Official flood/storm alert is issued.
+User opens Aasra or receives an SMS alert.
+App fetches the user's current location.
+It queries nearby shelters and food points from the live database.
+Full or inaccessible shelters are filtered out.
+The app displays the best route to the nearest available shelter.
+If there's no internet, the user receives an SMS with the top nearby shelters, their occupancy status, and a helpline number.
