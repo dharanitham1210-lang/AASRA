@@ -1,0 +1,6 @@
+#Foundational Research & Key References
+
+SACHET (NDMA/C-DOT): India's CAP-based alert platform—Aasra extends it from warning to actionable shelter guidance.
+NDMA National Guidelines on Temporary Shelters & Floods: Shapes Aasra's occupancy tracking and safe-route logic.
+2018 Kerala Floods case study: Alerts failed to reach people in time—the core motivating gap Aasra addresses.
+India's SMS/Cell Broadcast alerting model: Validates Aasra's no-network SMS fallback design.
