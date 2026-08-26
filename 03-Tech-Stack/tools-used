@@ -1,0 +1,32 @@
+# Tech-Stacks used in AASRA
+
+Frontend / Mobile
+Kotlin — primary language for the entire Android app
+Jetpack Compose (Material3) — declarative UI toolkit for all screens
+Jetpack Navigation Compose — handles the two separate nav graphs (citizen flow vs. authority flow)
+
+Android Speech Recognizer API — voice search/input, locale-aware (BCP-47 tags per selected Indian language)
+## Backend / Data :
+
+Firebase Authentication — anonymous sign-in for citizens, email/password for authorities/volunteers
+Cloud Firestore — NoSQL database for shelters, rescue requests, safe-status records, safe points, blocked zones
+Firebase Cloud Messaging (FCM) — set up for push notifications (via AasraMessagingService)
+Maps & Location
+Google Maps Compose SDK — live map with color-coded markers 
+(shelters/shops/health centers)
+Google Play Services — Fused Location Provider — GPS location detection
+Google Maps Directions Intent — one-tap turn-by-turn navigation to any resource
+Communication Channels
+Android SmsManager API — direct SMS delivery (storm alerts, rescue acknowledgments) — works over basic cellular network without mobile data
+Android Intent (ACTION_SENDTO / mailto) — email drafting for the Storm Alert feature
+Offline Support
+SharedPreferences + Gson — local caching of shelter/resource data, so the app falls back gracefully (live data → cached data → demo data) when there's no connectivity
+Networking (for weather integration)
+Retrofit2 + Gson Converter — HTTP client for the weather API
+OkHttp (logging interceptor) — network layer under Retrofit
+Kotlin Coroutines (kotlinx-coroutines-android, -play-services) — async operations throughout (Firestore calls, location fetches, API calls)
+Localization
+Custom in-house i18n layer (Strings.kt, SupportedLanguages.kt, SpeechLocale.kt) — 11-language support (English + 10 major Indian languages) with a language-switcher UI and matching speech-recognition locale
+Build System
+Gradle (Kotlin DSL) with version catalogs for plugin/dependency management
+Android Gradle Plugin 8.5.0, targeting compileSdk/targetSdk 34, minSdk
